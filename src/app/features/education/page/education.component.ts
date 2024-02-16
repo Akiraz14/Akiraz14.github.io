@@ -22,17 +22,35 @@ export class EducationComponent implements OnInit {
 
   private translocoService= inject(TranslocoService);
 
-  public educationalDegrees: Education[] = [];
+  public collageDegrees: Education[] = [];
+  public developerDegrees: Education[] = [];
+  public languageDegrees: Education[] = [];
+
+  public degreesActive: string = 'collage';
 
   ngOnInit(): void {
-    this.translocoService.selectTranslateObject('educationalDegrees', undefined, 'education')
+    this.translocoService.selectTranslateObject('collageDegrees', undefined, 'education')
     .subscribe(result => {
-      // console.log(result)
-      
-      this.educationalDegrees = Object.values(result)
-      
-      // console.log(this.educationalDegrees)
+      this.collageDegrees = Object.values(result)
     });
+
+    this.translocoService.selectTranslateObject('developerDegrees', undefined, 'education')
+    .subscribe(result => {
+      this.developerDegrees = Object.values(result)
+    });
+    
+    this.translocoService.selectTranslateObject('languageDegrees', undefined, 'education')
+    .subscribe(result => {
+      this.languageDegrees = Object.values(result)
+    });
+  }
+
+  showDegrees(degree: string): void {
+    this.degreesActive = degree;
+  }
+
+  isActive(degree: string): boolean {
+    return this.degreesActive === degree;
   }
 
 }

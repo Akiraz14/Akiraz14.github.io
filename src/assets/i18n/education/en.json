@@ -1,30 +1,48 @@
 {
   "title": "Education",
-  "educationalDegrees": {
+  "collage": "Collage",
+  "collageDegrees": {
     "education1": {
       "title": "Systems Technologist",
-      "at": "College Tecnológico de Antioquia",
-      "location": "Medellín, Colombia"
+      "at": "Tecnológico de Antioquia College",
+      "location": "Medellín, Colombia",
+      "date": "2012 - 2014"
+    }
+  },
+  "courses": "Courses",
+  "developerDegrees": {
+    "education1": {
+      "title": "Angular",
+      "at": "Udemy",
+      "date": "2018 - Present"
     },
     "education2": {
-      "title": "English courses",
-      "at": "College, job seminaries, Platzi, Duolingo, Udemy and Slang"
+      "title": "TypeScript",
+      "at": "Udemy",
+      "date": "2023 - 2024"
     },
     "education3": {
-      "title": "JavaScript courses",
-      "at": "At: Platzi, Github and Udemy"
+      "title": "HTML, CSS, JavaScript courses",
+      "at": "Platzi, Github, Udemy and W3School",
+      "date": "2018 - 2024"
     },
     "education4": {
-      "title": "React Native course",
-      "at": "At: Udemy"
+      "title": "Solid principles and clean code",
+      "at": "Udemy",
+      "date": "2020 - 2024"
     },
     "education5": {
-      "title": "HTML and CSS courses",
-      "at": "At: Platzi, Github, and Udemy"
-    },
-    "education6": {
       "title": "Principles and good practices for software development",
-      "at": "At: Udemy, Platzi, Github, Youtube Schools channels"
+      "at": "Udemy, Platzi, Github and Youtube educational channels",
+      "date": "2020 - 2024"
+    }
+  },
+  "language": "Language",
+  "languageDegrees": {
+    "education1": {
+      "title": "English courses: A1, A2, B1, B2",
+      "at": "College, Platzi, Duolingo, Slang and seminaries",
+      "date": "2012 - Present"
     }
   }
 }

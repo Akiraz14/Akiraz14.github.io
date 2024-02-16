@@ -1,9 +1,12 @@
 {
   "title": "About",
   "description": {
-    "paragraph1": "Hello there! My name is Juan Zapata, I'm a front-end and back-end web developer who really enjoys designing web pages and services that make things look awesome and work perfectly well.",
+    "paragraph1": "I'm a front-end and back-end web developer who really enjoys designing web pages and services that make things look awesome and work perfectly well.",
     "paragraph2": "I have been part of work teams as a member and also as a leader or coordinator, finding solutions for a variety of clients and using different types of technologies, frameworks and programming languages.",
-    "paragraph3": "You can also find me as Akiraz14, as my nickname across some social media.",
+    "paragraph3_1": "You can also find me as",
+    "paragraph3_2": "as my nickname across some social media.",
     "paragraph4": "I am very interested in traveling, improving my English, getting to know new places and cultures, watching documentaries, movies and series, studying and learning new things and cooking delicious food as well."
-  }
+  },
+  "greeting": "Hello there!",
+  "myNameIs": "My name is"
 }

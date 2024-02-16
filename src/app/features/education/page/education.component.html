@@ -1,13 +1,54 @@
-<div class="container" *transloco="let t; scope: 'education'">
-  <h2>{{t('education.title')}}</h2>
-  <div class="card">
-    <div class="card-body">
-      <ul>
-        <li *ngFor="let education of educationalDegrees">
-          <p>{{education.title}}</p>
-          <p>{{education.at}}</p>
-        </li>
-      </ul>
+<div class="container-fluid" *transloco="let t; scope: 'education'">
+  <h2 class="text-warning">{{t('education.title')}}</h2>
+
+  <div class="container text-center">
+
+    <div class="row mt-5">
+      <h3 class="text-info-emphasis">{{t('education.collage')}}</h3>
+      <div class="col" *ngFor="let collEducation of collageDegrees">
+        <div class="card mt-3">
+          <div class="card-body">
+            <h4 class="card-title border-bottom pb-2">{{collEducation.title}}</h4>
+            <p class="card-text text-body-tertiary">{{collEducation.at}}</p>
+          </div>
+          <div class="card-footer text-body-secondary">
+            {{collEducation.date}}
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="row mt-5">
+      <h3 class="text-info-emphasis">{{t('education.courses')}}</h3>
+      <div class="col-12 col-md-4" *ngFor="let devEducation of developerDegrees">
+        <div class="card mt-3">
+          <div class="card-body">
+            <h4 class="card-title border-bottom pb-2">{{devEducation.title}}</h4>
+            <p class="card-text text-body-tertiary">{{devEducation.at}}</p>
+          </div>
+          <div class="card-footer text-body-secondary">
+            {{devEducation.date}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <h3 class="text-info-emphasis">{{t('education.language')}}</h3>
+      <div class="col" *ngFor="let langEducation of languageDegrees">
+        <div class="card mt-3">
+          <div class="card-body">
+            <h4 class="card-title border-bottom pb-2">{{langEducation.title}}</h4>
+            <p class="card-text text-body-tertiary">{{langEducation.at}}</p>
+          </div>
+          <div class="card-footer text-body-secondary">
+            {{langEducation.date}}
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+
 </div>
