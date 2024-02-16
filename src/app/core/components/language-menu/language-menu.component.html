@@ -1,0 +1,17 @@
+<div class="btn-group" role="group" aria-label="language toggle button group" *transloco="let t">
+  <input type="radio" id="langEn" class="btn-check" name="btnradio" autocomplete="off" (change)="changeLanguage(langEn)"
+    [checked]="currentLanguage().code === 'en'">
+  <label for="langEn" class="flag d-flex flex-column" [title]="t('languages.'+langEn.code+'.name')"
+    [ngClass]="{'flag-active': currentLanguage().code === 'en'}">
+    <img class="m-1" [src]="langEn.imgUrl" [alt]="langEn.name">
+    <span>{{t('languages.'+langEn.code+'.shorthand')}}</span>
+  </label>
+
+  <input type="radio" id="lang1" class="btn-check" name="btnradio" autocomplete="off" (change)="changeLanguage(langEs)"
+    [checked]="currentLanguage().code === 'es'">
+  <label for="lang1" class="flag ms-2 d-flex flex-column" [title]="t('languages.'+langEs.code+'.name')"
+    [ngClass]="{'flag-active': currentLanguage().code === 'es'}">
+    <img class="m-1" [src]="langEs.imgUrl" [alt]="langEs.name">
+    <span>{{t('languages.'+langEs.code+'.shorthand')}}</span>
+  </label>
+</div>

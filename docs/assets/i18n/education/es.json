@@ -1,0 +1,30 @@
+{
+  "title": "Educación",
+  "educationalDegrees": {
+    "education1": {
+      "title": "Tecnólogo de Sistemas",
+      "at": "Universidad Tecnológico de Antioquia",
+      "location": "Medellín, Colombia"
+    },
+    "education2": {
+      "title": "Cursos de Inglés",
+      "at": "Universidad, seminarios laborales, Platzi, Duolingo, Udemy y Slang"
+    },
+    "education3": {
+      "title": "Cursos de Javascript",
+      "at": "Platzi, Github y Udemy"
+    },
+    "education4": {
+      "title": "Curso de React Native",
+      "at": "Udemy"
+    },
+    "education5": {
+      "title": "Cursos de HTML and CSS",
+      "at": "At: Platzi, Github, and Udemy"
+    },
+    "education6": {
+      "title": "Principios y buenas prácticas para el desarrollo de software",
+      "at": "Udemy, Platzi, Github, , Youtube Schools channels"
+    }
+  }
+}

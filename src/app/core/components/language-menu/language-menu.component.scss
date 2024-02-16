@@ -1,0 +1,21 @@
+.flag {
+  cursor: pointer;
+
+  img {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 4px;
+    filter: grayscale(100%);
+  }
+  
+  span {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}
+
+.flag-active {
+  img {
+    filter: none;
+  }
+}

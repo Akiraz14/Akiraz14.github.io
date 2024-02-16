@@ -1,0 +1,30 @@
+{
+  "title": "Education",
+  "educationalDegrees": {
+    "education1": {
+      "title": "Systems Technologist",
+      "at": "College Tecnológico de Antioquia",
+      "location": "Medellín, Colombia"
+    },
+    "education2": {
+      "title": "English courses",
+      "at": "College, job seminaries, Platzi, Duolingo, Udemy and Slang"
+    },
+    "education3": {
+      "title": "JavaScript courses",
+      "at": "At: Platzi, Github and Udemy"
+    },
+    "education4": {
+      "title": "React Native course",
+      "at": "At: Udemy"
+    },
+    "education5": {
+      "title": "HTML and CSS courses",
+      "at": "At: Platzi, Github, and Udemy"
+    },
+    "education6": {
+      "title": "Principles and good practices for software development",
+      "at": "At: Udemy, Platzi, Github, Youtube Schools channels"
+    }
+  }
+}

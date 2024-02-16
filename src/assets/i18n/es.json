@@ -1,0 +1,27 @@
+{
+  "createdBy": "Creado por",
+  "greeting": "Hola, mi nombre es",
+  "languages": {
+    "en": {
+      "name": "Inglés",
+      "shorthand": "ING"
+    },
+    "es": {
+      "name": "Español",
+      "shorthand": "ESP"
+    }
+  },
+  "profession": "y soy desarrollador web.",
+  "sidemenu": {
+    "title": "Menú",
+    "items": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "education": "Educación",
+      "contact": "Contacto"
+    }
+  },
+  "welcome": "Bienvenido a mi portafolio"
+}
