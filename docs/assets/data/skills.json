@@ -1,0 +1,116 @@
+[
+  {
+    "skillId": 1,
+    "name": "C#",
+    "imgUrl": "./assets/images/logos/icons8-csharp-48.png",
+    "categories": ["programming languages", "back-end"]
+  },
+  {
+    "skillId": 2,
+    "name": "Javascript",
+    "imgUrl": "./assets/images/logos/icons8-javascript-48.png",
+    "categories": ["programming languages", "front-end", "back-end"]
+  },
+  {
+    "skillId": 3,
+    "name": "TypeScript",
+    "imgUrl": "./assets/images/logos/icons8-typescript-48.png",
+    "categories": ["programming languages", "front-end", "back-end"]
+  },
+  {
+    "skillId": 4,
+    "name": "HTML",
+    "imgUrl": "./assets/images/logos/icons8-html-48.png",
+    "categories": ["programming languages", "front-end"]
+  },
+  {
+    "skillId": 5,
+    "name": "CSS",
+    "imgUrl": "./assets/images/logos/icons8-css3-48.png",
+    "categories": ["programming languages", "front-end"]
+  },
+  {
+    "skillId": 6,
+    "name": "Sass",
+    "imgUrl": "./assets/images/logos/icons8-sass-48.png",
+    "categories": ["programming languages", "front-end"]
+  },
+  {
+    "skillId": 7,
+    "name": "SQL",
+    "imgUrl": "./assets/images/logos/icons8-sql-48.png",
+    "categories": ["programming languages", "databases"]
+  },
+  {
+    "skillId": 8,
+    "name": "Visual Basic",
+    "imgUrl": "./assets/images/logos/icons8-visual-basic-48.png",
+    "categories": ["programming languages", "back-end"]
+  },
+  {
+    "skillId": 9,
+    "name": "Angular",
+    "imgUrl": "./assets/images/logos/angular-48.png",
+    "categories": ["frameworks"]
+  },
+  {
+    "skillId": 9,
+    "name": ".NET Core",
+    "imgUrl": "./assets/images/logos/netcore-48.png",
+    "categories": ["frameworks"]
+  },
+  {
+    "skillId": 9,
+    "name": "Bootstrap",
+    "imgUrl": "./assets/images/logos/icons8-bootstrap-48.png",
+    "categories": ["frameworks"]
+  },
+  {
+    "skillId": 10,
+    "name": "MSSQL Server",
+    "imgUrl": "./assets/images/logos/icons8-microsoft-sql-server-48.png",
+    "categories": ["databases", "tools", "back-end"]
+  },
+  {
+    "skillId": 11,
+    "name": "PostgreSQL",
+    "imgUrl": "./assets/images/logos/icons8-postgresql-48.png",
+    "categories": ["databases", "tools", "back-end"]
+  },
+  {
+    "skillId": 12,
+    "name": "Visual Studio Code",
+    "imgUrl": "./assets/images/logos/icons8-visual-studio-code-48.png",
+    "categories": ["tools"]
+  },
+  {
+    "skillId": 13,
+    "name": "Visual Studio",
+    "imgUrl": "./assets/images/logos/icons8-visual-studio-48.png",
+    "categories": ["tools"]
+  },
+  {
+    "skillId": 14,
+    "name": "Postman",
+    "imgUrl": "./assets/images/logos/icons8-postman-48.png",
+    "categories": ["tools"]
+  },
+  {
+    "skillId": 15,
+    "name": "Git",
+    "imgUrl": "./assets/images/logos/icons8-git-48.png",
+    "categories": ["tools", "version control system"]
+  },
+  {
+    "skillId": 16,
+    "name": "Github",
+    "imgUrl": "./assets/images/logos/icons8-github-48.png",
+    "categories": ["tools", "version control system"]
+  },
+  {
+    "skillId": 17,
+    "name": "Gitlab",
+    "imgUrl": "./assets/images/logos/icons8-gitlab-48.png",
+    "categories": ["tools", "version control system"]
+  }
+]

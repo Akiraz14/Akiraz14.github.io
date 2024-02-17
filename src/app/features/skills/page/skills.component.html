@@ -1,7 +1,46 @@
-<div class="container" *transloco="let t; scope: 'skills'">
+<div class="container-fluid" *transloco="let t; scope: 'skills'">
   <h2 class="text-warning">{{t('skills.title')}}</h2>
-  <div class="card">
-    <div class="card-body">
+  
+  <div class="row mt-5">
+    <h3 class="text-info-emphasis">{{t('skills.programmingLanguages')}}</h3>
+    <div class="col p-2" *ngFor="let lang of languages">
+      <div class="card custom-shadow">
+        <div class="card-body p-2">
+          <figure class="d-flex align-items-center gap-1 m-0">
+            <img [src]="lang.imgUrl" [alt]="lang.name">
+            <figcaption>{{lang.name}}</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </div>
+  
+  <div class="row mt-5">
+    <h3 class="text-info-emphasis">Frameworks</h3>
+    <div class="col p-2" *ngFor="let frame of frameworks">
+      <div class="card custom-shadow">
+        <div class="card-body p-2">
+          <figure class="d-flex align-items-center gap-1 m-0">
+            <img [src]="frame.imgUrl" [alt]="frame.name">
+            <figcaption>{{frame.name}}</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-5">
+    <h3 class="text-info-emphasis">{{t('skills.tools')}}</h3>
+    <div class="col p-2" *ngFor="let tool of tools">
+      <div class="card custom-shadow">
+        <div class="card-body p-2">
+          <figure class="d-flex align-items-center gap-1 m-0">
+            <img [src]="tool.imgUrl" [alt]="tool.name">
+            <figcaption>{{tool.name}}</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

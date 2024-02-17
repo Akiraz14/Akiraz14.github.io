@@ -1,10 +1,29 @@
-<div class="fixed-bottom pt-4 bg-black text-white text-center">
-  <div class="col"></div>
-  <div class="col" *transloco="let t">
-    <p class="fs-6">{{t('createdBy')}} <a target="_blank" href="https://akiraz14.github.io/"
+<div class="container-fluid fixed-bottom py-2 bg-black text-white text-center" *transloco="let t">
+  <!-- <div class="col"></div> -->
+  <div class="row">
+    <div class="col">
+      <p class="m-0">{{t('createdBy')}} <a target="_blank" href="https://akiraz14.github.io/"
         class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Akiraz14</a></p>
-  </div>
-  <div class="col">
+      <p class="m-0"><small class="text-body-secondary">© 2024 {{t('rightsReserved')}}</small></p>
+    </div>
+    <div class="col gap-2 d-flex align-items-center justify-content-end">
 
+      <a target="_blank" href="https://github.com/Akiraz14/"
+        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+        <figure class="logo m-0">
+          <img src="./assets/images/logos/icons8-github-48.png" alt="Github">
+          <!-- <figcaption>Github</figcaption> -->
+        </figure>
+      </a>
+
+      <a target="_blank" href="https://www.linkedin.com/in/juan-zapata-62a736232/"
+        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+        <figure class="logo m-0">
+          <img src="./assets/images/logos/icons8-linkedin-48.png" alt="LinkedIn">
+          <!-- <figcaption>LinkedIn</figcaption> -->
+        </figure>
+      </a>
+      
+    </div>
   </div>
 </div>

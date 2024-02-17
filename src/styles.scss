@@ -22,3 +22,8 @@ body {
   font-style: normal;
 }
 
+.custom-shadow {
+  // -webkit-box-shadow: 10px 10px 10px -1px currentColor;
+  // -moz-box-shadow: 10px 10px 10px -1px currentColor;
+  box-shadow: 4px 4px 10px -4px currentColor;
+}
