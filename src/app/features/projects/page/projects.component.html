@@ -1,11 +1,6 @@
 <div class="container" *transloco="let t; scope: 'projects'">
   <h2 class="text-color-1 text-border-2">{{t('projects.title')}}</h2>
 
-  <!-- <div class="card">
-    <div class="card-body">
-    </div>
-  </div> -->
-
   <div class="card border-0 custom-shadow mb-3" style="max-width: 540px;" *ngFor="let project of projects">
     <div class="row g-0">
       <div class="col-4">
@@ -22,8 +17,6 @@
               {{t('projects.link')}}
             </a>
           </div>
-          <!-- <button type="button" class="btn btn-outline-warning">Let's see it!</button>
-          <button type="button" class="btn btn-warning">Let's see it!</button> -->
         </div>
         <div class="card-footer">
           <p class="card-text mb-1">{{t('projects.technologies')}}:</p>

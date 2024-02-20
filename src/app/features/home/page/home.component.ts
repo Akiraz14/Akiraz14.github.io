@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { TranslocoModule } from '@ngneat/transloco';
 
 import { SharedFunctionsService } from '@shared/services/shared-functions.service';
-import { MenuItem } from '@core/models';
+import { CURRENT_MENU, MenuItem } from '@core/models';
 
 @Component({
   selector: 'app-home',
@@ -22,14 +22,7 @@ export class HomeComponent {
 
   private sharedFunctions = inject(SharedFunctionsService);
   
-  public menuItems: MenuItem[] = [
-    // { title: 'home', route: '/home' },
-    { title: 'about', route: 'about' },
-    { title: 'projects', route: 'projects' },
-    { title: 'skills', route: 'skills' },
-    { title: 'education', route: 'education' },
-    { title: 'contact', route: 'contact' },
-  ];
+  public menuItems: MenuItem[] = CURRENT_MENU;
   
   scrollToSection(id: string, event: Event): void {
     this.sharedFunctions.scrollToSection(id, event);

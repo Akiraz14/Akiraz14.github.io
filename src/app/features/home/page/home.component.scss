@@ -1,19 +1,22 @@
 .home-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0px;
-  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border-radius: var(--bs-border-radius-pill);
-  background: var(--bs-body-bg);
-  overflow: hidden;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-border-radius-pill);
+    background: var(--bs-body-bg);
+    overflow: hidden;
+  }
 
   a {
     display: inline-block;
     padding: 10px 15px;
     color: currentColor;
     text-decoration: none;
-    
+
     &:hover {
       background-color: var(--bs-secondary);
     }
@@ -21,13 +24,74 @@
 
   li {
     list-style: none;
-    // cursor: pointer;
 
-    &:nth-child(1) a { padding-left: 20px; }
-    &:nth-last-child(1) a { padding-right: 20px; }
+    &:nth-child(1) a {
+      padding-left: 20px;
+    }
+
+    &:nth-last-child(1) a {
+      padding-right: 20px;
+    }
+
     &:nth-child(n+2) {
       border-left: var(--bs-card-border-width) solid var(--bs-card-border-color);
     }
   }
 
+}
+
+.draw {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('assets/images/others/juan-draw.jpg');
+}
+
+.icon-arrow {
+  display: none;
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  .bi {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.bounce {
+  animation: bounce 2.5s ease infinite;
+}
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  .home-menu {
+    ul {
+      display: none;
+    }
+  }
+
+  .draw {
+    width: 180px;
+    height: 180px;
+  }
+
+  .icon-arrow {
+    display: flex;
+    justify-content: center;
+  }
 }
