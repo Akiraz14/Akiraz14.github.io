@@ -1,3 +1,10 @@
 {
-  "title": "Proyectos"
+  "title": "Proyectos",
+  "technologies": "Tecnologías",
+  "lastUpdate": "Última actualización",
+  "link": "¡Vamos a verlo!",
+  "GamesApp": {
+    "title": "GamesApp",
+    "description": "Sitio web que contiene diferentes juegos con fines de entretenimiento."
+  }
 }

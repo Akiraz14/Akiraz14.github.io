@@ -1,0 +1,28 @@
+.home-icons {
+  .final {
+    display: none;
+  }
+
+  &:hover {
+    .initial {
+      display: none;
+    }
+
+    .final {
+      display: block;
+    }
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  a.nav-link {
+    padding-bottom: 1px;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+
+    &:hover {
+      padding-bottom: 0px;
+      border-bottom-width: calc(var(--bs-border-width) + 1px);
+    }
+  }
+}

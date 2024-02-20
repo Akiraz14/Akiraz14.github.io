@@ -1,29 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "~bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+:root {
+  --bg-img: url('./assets/images/background/pexels-aron-visuals-1743165.jpg');
+}
+
+[data-bs-theme=light] {
+  --bg-img: url('./assets/images/background/pexels-césar-gaviria-16637452.jpg');
+  --cl-1: #CA6510;
+  --cl-2: #0d6efd;
+  --cl-3: #055160;
+  
+  .badge {
+    color: #fff !important;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity, 1));
+  }
+
+  .custom-btn {
+    border: var(--bs-border-width) solid #ffc107;
+    color: #000;
+    background-color: #ffc107;
+
+    &:hover {
+      background-color: #ffca2c;
+    }
+  }
+}
+
+[data-bs-theme=dark] {
+  --bg-img: url('./assets/images/background/pexels-aron-visuals-1743165.jpg');
+  // --bg-img: url('./assets/images/background/pexels-stanislav-kondratiev-2908971.jpg');
+  // --bg-img: url('./assets/images/background/pexels-instawalli-176851.jpg');
+  // --bg-img: url('./assets/images/background/pexels-eberhard-grossgasteiger-2098427.jpg');
+
+  --cl-1: #ffc107;
+  --cl-2: #6EDFF6;
+  --cl-3: #0dcaf0;
+
+  .badge {
+    color: #000;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity, 1));
+  }
+
+  .custom-btn {
+    border: var(--bs-border-width) solid #ffc107;
+    color: #ffc107;
+
+    &:hover {
+      color: #000;
+      background-color: #ffc107;
+    }
+  }
+}
 
 body {
   font-family: 'Kalam', cursive;
-}
 
-.kalam-light {
-  font-family: "Kalam", cursive;
-  font-weight: 300;
-  font-style: normal;
-}
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.kalam-regular {
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.kalam-bold {
-  font-family: "Kalam", cursive;
-  font-weight: 700;
-  font-style: normal;
+  background-image: var(--bg-img);
 }
 
 .custom-shadow {
-  // -webkit-box-shadow: 10px 10px 10px -1px currentColor;
-  // -moz-box-shadow: 10px 10px 10px -1px currentColor;
-  box-shadow: 4px 4px 10px -4px currentColor;
+  -webkit-box-shadow: 4px 4px 10px -1px var(--bs-dark);
+  -moz-box-shadow: 4px 4px 10px -1px var(--bs-dark);
+  box-shadow: 4px 4px 10px -1px var(--bs-dark);
+}
+
+.card {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(var(--bs-body-bg-rgb), 0.6);
+  // background-color: rgba(var(--bs-body-color-rgb), 0.8);
+}
+
+.text-color-1 { color: var(--cl-1); }
+.text-color-2 { color: var(--cl-2); }
+.text-color-3 { color: var(--cl-3); }
+
+.bg-color-1 { background-color: var(--cl-1); }
+.bg-color-2 { background-color: var(--cl-2); }
+.bg-color-3 { background-color: var(--cl-2); }
+
+.text-border-2 {
+  text-shadow: 1px 0 var(--bs-body-bg), -1px 0 var(--bs-body-bg), 0 1px var(--bs-body-bg), 0 -1px var(--bs-body-bg),
+  1px 1px var(--bs-body-bg), -1px -1px var(--bs-body-bg), 1px -1px var(--bs-body-bg), -1px 1px var(--bs-body-bg);
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  [data-bs-theme=light] {
+    --bg-img: url('./assets/images/background/pexels-césar-gaviria-16637452-mobile.jpg');
+  }
+  [data-bs-theme=dark] {
+    --bg-img: url('./assets/images/background/pexels-aron-visuals-1743165-mobile.jpg');
+  }
 }

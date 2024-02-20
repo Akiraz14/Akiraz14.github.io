@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, HostBinding, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -16,7 +16,7 @@ export class ThemeMenuComponent {
 
   ngOnInit(): void {
     const theme = this.getCurrentTheme();
-    this.currentTheme.set(theme);
+    this.setTheme(theme);
   }
 
   private getCurrentTheme(): 'light'|'dark' {
@@ -24,9 +24,14 @@ export class ThemeMenuComponent {
     return theme;
   }
 
-  changeTheme(): void {
-    const theme = (this.getCurrentTheme() === 'light') ? 'dark' : 'light';
+  private setTheme(theme: 'light'|'dark'): void {
     document.documentElement.setAttribute('data-bs-theme', theme);
     this.currentTheme.set(theme);
   }
+
+  changeTheme(): void {
+    const theme = (this.getCurrentTheme() === 'light') ? 'dark' : 'light';
+    this.setTheme(theme);
+  }
+
 }

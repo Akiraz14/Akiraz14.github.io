@@ -1,19 +1,14 @@
 .card {
-  
   img {
     width: 32px;
     perspective: 1000px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-}
 
-
-.card:hover {
-
-  img {
-    transform: rotateY(360deg);
+  &:hover {
+    img {
+      transform: rotateY(360deg);
+    }
   }
 }
-
-

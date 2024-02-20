@@ -1,0 +1,7 @@
+.card img {
+  height: 100%;
+}
+
+[data-bs-theme=dark] .btn {
+  border: var(--bs-border-width) solid #ffc107;
+}

@@ -1,7 +1,27 @@
 <app-header />
 
-<div class="topic d-flex align-items-center justify-content-center">
+<!-- <div class="topic d-flex align-items-center justify-content-center">
   <router-outlet />
+</div> -->
+<div data-bs-spy="scroll" data-bs-target="#navbar">
+  <div id="home" class="topic d-flex align-items-center justify-content-center">
+    <app-home />
+  </div>
+  <div id="about" class="topic d-flex align-items-center justify-content-center">
+    <app-about />
+  </div>
+  <div id="projects" class="topic d-flex align-items-center justify-content-center">
+    <app-projects />
+  </div>
+  <div id="skills" class="topic d-flex align-items-center justify-content-center">
+    <app-skills />
+  </div>
+  <div id="education" class="topic d-flex align-items-center justify-content-center">
+    <app-education />
+  </div>
+  <div id="contact" class="topic d-flex align-items-center justify-content-center">
+    <app-contact />
+  </div>
 </div>
 
 <app-footer />

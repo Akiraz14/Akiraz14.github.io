@@ -5,9 +5,13 @@ export const routes: Routes = [
   {
     path: '',
     component: MainLayoutComponent,
-    loadChildren: () => import('@core/layouts/main-layout/main-layout.routes').then(r => r.MAIN_LAYOUT_ROUTES),
-  },
-  {
-    path: '**', redirectTo: ''
   }
+  // {
+  //   path: '',
+  //   component: MainLayoutComponent,
+  //   loadChildren: () => import('@core/layouts/main-layout/main-layout.routes').then(r => r.MAIN_LAYOUT_ROUTES),
+  // },
+  // {
+  //   path: '**', redirectTo: ''
+  // }
 ];

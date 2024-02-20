@@ -3,7 +3,7 @@ import { HomeComponent } from "@features/home/page/home.component";
 
 export const MAIN_LAYOUT_ROUTES: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
   },
   {
@@ -27,6 +27,6 @@ export const MAIN_LAYOUT_ROUTES: Routes = [
     loadComponent: () => import('@features/contact/page/contact.component').then(c => c.ContactComponent),
   },
   {
-    path: '**', redirectTo: 'home', pathMatch: 'full'
+    path: '**', redirectTo: '', pathMatch: 'full'
   }
 ];
