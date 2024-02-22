@@ -1,8 +1,79 @@
 <div class="container" *transloco="let t; scope: 'contact'">
   <h2 class="text-color-1 text-border-2">{{t('contact.title')}}</h2>
-  
+
   <div class="card">
     <div class="card-body">
+      <p>{{t('contact.paragraph1')}}</p>
+      <p>{{t('contact.paragraph2')}}</p>
+      <a class="link-offset-3" target="_blank" href="https://www.linkedin.com/in/juan-zapata-62a736232/">
+        <figure class="d-flex align-items-center gap-1 m-0">
+          <img src="./assets/images/logos/icons8-linkedin-48.png" alt="LinkedIn">
+          <figcaption>{{t('contact.openLinkedIn')}}</figcaption>
+        </figure>
+      </a>
+
+      <p class="mt-3">{{t('contact.paragraph3')}}</p>
+      
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="row">
+        <h4 class="text-color-2 my-3">{{t('contact.formTitle')}}</h4>
+
+        <div class="col-12 mb-3" [ngClass]="{ 'was-validated': wasTouched('name') }">
+          <label for="name" class="form-label">{{t('contact.fields.name')}}</label>
+          <input type="text" id="name" formControlName="name" class="form-control"
+          [placeholder]="t('contact.placeholders.name')"
+          required [minlength]="minName" [maxlength]="maxName">
+          <div class="invalid-feedback">
+            {{t('contact.feedback.name')}}
+          </div>
+          <!-- <div class="invalid-feedback">
+            {{t('contact.feedback.length', { currlength: fieldLength('name'), minlength: minName, maxlength: maxName })}}
+          </div> -->
+        </div>
+
+        <div class="col-12 mb-3" [ngClass]="{ 'was-validated': wasTouched('email') }">
+          <label for="email" class="form-label">{{t('contact.fields.email')}}</label>
+          <input type="email" id="email" formControlName="email" class="form-control"
+          [placeholder]="t('contact.placeholders.email')" required>
+          <div class="invalid-feedback">{{t('contact.feedback.email')}}</div>
+        </div>
+        
+        <div class="col-12 mb-3" [ngClass]="{ 'was-validated': wasTouched('subject') }">
+          <label for="subject" class="form-label">{{t('contact.fields.subject')}}</label>
+          <input type="text" id="subject" formControlName="subject" class="form-control"
+          [placeholder]="t('contact.placeholders.subject')"
+          required [minlength]="minSubject" [maxlength]="maxSubject">
+          <div class="invalid-feedback">
+            {{t('contact.feedback.subject')}}
+          </div>
+          <div class="invalid-feedback">
+            {{t('contact.feedback.length', { currlength: fieldLength('subject'), minlength: minSubject, maxlength: maxSubject })}}
+          </div>
+        </div>
+
+        <div class="col-12 mb-3" [ngClass]="{ 'was-validated': wasTouched('message') }">
+          <label for="message" class="form-label">{{t('contact.fields.message')}}</label>
+          <textarea id="message" formControlName="message" class="form-control"
+            [placeholder]="t('contact.placeholders.message')" style="height: 120px;"
+            required [minlength]="minMessage" [maxlength]="maxMessage"></textarea>
+            <div class="invalid-feedback">
+              {{t('contact.feedback.message')}}
+            </div>
+            <div class="invalid-feedback">
+              {{t('contact.feedback.length', { currlength: fieldLength('message'), minlength: minMessage, maxlength: maxMessage })}}
+            </div>
+        </div>
+
+        <!-- <div class="col-12 mb-3">
+          <app-recaptcha (isReCaptchaValid)="isReCaptchaValid($event)" />
+        </div> -->
+
+        <div class="col-12 mt-2">
+          <button [disabled]="contactForm.disabled" type="submit" class="btn custom-btn">{{t('contact.send')}}</button>
+        </div>
+
+      </form>
+
     </div>
   </div>
+
 </div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 //third-party
-import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-footer',

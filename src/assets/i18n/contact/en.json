@@ -1,3 +1,45 @@
 {
-  "title": "Contact"
+  "title": "Contact",
+  "formTitle": "Let's connect",
+  "paragraph1": "I’m interested in freelance opportunities or new job offers. Please don’t hesitate and send me a message. Get in contact and let’s create awesome things together!",
+  "paragraph2": "You can get in touch through my LinkedIn account.",
+  "paragraph3": "or send me a message here.",
+  "feedback": {
+    "name": "Please provide your name.",
+    "email": "Please provide a valid email. e.g. janedoe@bestboss.com",
+    "subject": "Please provide a subject.",
+    "message": "Please provide a message.",
+    "length": "Characters {{minlength}} min. / {{maxlength}} max. Current: {{currlength}}.",
+    "maxlength": "Characters {{maxlength}} max. Current: {{currlength}}."
+  },
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message"
+  },
+  "openLinkedIn": "Contact via LinkedIn",
+  "placeholders": {
+    "name": "e.g. Jane Doe",
+    "email": "e.g. janedoe@bestboss.com",
+    "subject": "e.g. New project to develop",
+    "message": "e.g. Hello Juan, I want us to work together and ..."
+  },
+  "send": "Send message",
+  "sendingMessage": {
+    "title": "Do you want to send the message?",
+    "message": "It'll be sent in a heartbeat!",
+    "confirm": "Yes!",
+    "cancel": "Cancel",
+    "title2": "Sending message",
+    "message2": "It'll be sent in a jiffy!"
+  },
+  "successMessage": {
+    "title": "Houston, we have liftoff!",
+    "message": "Your message has embarked on its digital journey. Brace yourself for an imminent wave of connection."
+  },
+  "errorMessage": {
+    "title": "Uh-oh!",
+    "message": "Looks like the form is feeling a bit shy and got stage fright. Let me sprinkle some confidence, give it a pep talk and hit that submit button again."
+  }
 }

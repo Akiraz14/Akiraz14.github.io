@@ -1,3 +1,45 @@
 {
-  "title": "Contacto"
+  "title": "Contacto",
+  "formTitle": "Pongámonos en contacto",
+  "paragraph1": "Estoy interesado en oportunidades como freelance o nuevas ofertas laborales. Por favor no lo dudes y envíame un mensaje. ¡Ponte en contacto y creemos cosas increíbles juntos!",
+  "paragraph2": "Puedes ponerte en contacto a través de mi cuenta de LinkedIn.",
+  "paragraph3": " o enviarme un mensaje por este medio.",
+  "feedback": {
+    "name": "Por favor, ingresa un nombre.",
+    "email": "Por favor, ingresa un correo válido. ej. janedoe@bestboss.com",
+    "subject": "Por favor, ingresa un asunto.",
+    "message": "Por favor, ingresa un mensaje.",
+    "length": "Caracteres {{minlength}} mín. / {{maxlength}} máx. Actuales: {{currlength}}.",
+    "maxlength": "Caracteres {{maxlength}} máx. Actuales: {{currlength}}."
+  },
+  "fields": {
+    "name": "Nombre",
+    "email": "Correo",
+    "subject": "Asunto",
+    "message": "Mensaje"
+  },
+  "openLinkedIn": "Contactar a través de LinkedIn",
+  "placeholders": {
+    "name": "ej. Jane Doe",
+    "email": "ej. janedoe@bestboss.com",
+    "subject": "ej. Nuevo proyecto a desarrollar",
+    "message": "ej. Hola Juan, quiero que trabajemos juntos y ..."
+  },
+  "send": "Enviar mensaje",
+  "sendingMessage": {
+    "title": "¿Quieres enviar el mensaje?",
+    "message": "¡Se enviará en parpadas!",
+    "confirm": "Sí",
+    "cancel": "Cancelar",
+    "title2": "Enviando mensaje",
+    "message2": "¡Se enviará en un santiamén!"
+  },
+  "successMessage": {
+    "title": "¡Ka-chow!",
+    "message": "Tu mensaje ha sido enviado cuál cohete y está listo para arrasar como bólido. Prepárate para recibir una respuesta en un abrir y cerrar de ojos, amigo."
+  },
+  "errorMessage": {
+    "title": "¡Oh no!",
+    "message": "Parece que el formulario se siente un poco tímido y tiene pánico escénico. Déjame le doy un poco de confianza, una charla motivacional y presiona el botón de enviar nuevamente."
+  }
 }

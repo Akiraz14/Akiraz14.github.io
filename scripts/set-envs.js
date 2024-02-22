@@ -3,7 +3,10 @@ const { writeFileSync, mkdirSync } = require('fs');
 require('dotenv').config();
 
 const envFields = [
-  'skillsApiUrl'
+  'skillsApiUrl',
+  'contactApiUrl',
+  'reCaptchaV2SiteKey',
+  'reCaptchaV3SiteKey',
 ];
 
 let envContent = '';
